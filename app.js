@@ -12,7 +12,7 @@ app.use(express.json({ limit: 15728640 }));
 
 app.set('view engine', 'ejs');
 
-app.use('/api', require('./routes/routes'));
+app.use('/', require('./routes/routes'));
 
 async function start() {
   try {
