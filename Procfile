@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=development concurrently \"npm run server\"
+web: node app.js
