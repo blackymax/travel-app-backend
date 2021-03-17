@@ -6,7 +6,7 @@ const countrySchema = require('./models/countrySchema');
 
 const app = express();
 
-const PORT = config.get('port') || 5000;
+const PORT = 5000;
 
 app.use(express.json({ limit: 15728640 }));
 
