@@ -1,1 +1,1 @@
-web: nodemon app.js
+web: cross-env NODE_ENV=development concurrently \"npm run server\"
