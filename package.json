@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "node app.js",
-    "server": "nodemon app.js",
-    "client": "npm run start --prefix ./../client",
-    "client:install": "npm install --prefix ./../client",
-    "client:build": "npm run build --prefix ./../client",
-    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  "engines": {
+    "node": "12.18.3"
   },
-  "author": "lexa",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Max",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
